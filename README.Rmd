@@ -2,12 +2,8 @@
 title: "Identifying Samples with High Technical Variation"
 author: "Angela Sofia Burkhart Colorado"
 date: '2022-08-16'
-output: html_document
+output: rmarkdown::github_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Description
 
@@ -16,7 +12,7 @@ through standard dada2 pipeline in QIIME2. The four kinds of distances metrics a
 
 ## Workflow 
 
-# Arguments 
+### Arguments 
 
 Should one want information on a distribution of **one** distance metric, further arguments that are needed include: 
 1. Metric (or method) used **e.g. Jaccard** 
@@ -33,7 +29,7 @@ When plotting distributions there are four arguments:
 
 To plot summary statistics the only arguments needed are **1 & 2** of the arguments used in the plots. 
 
-# Inputs 
+### Inputs 
 To run this script you will need two file types: 
 1. metadata file (.tsv)
 2. distance matrix file (.txt)
@@ -41,42 +37,34 @@ To run this script you will need two file types:
 Metadata example: 
 
 ```{r, echo=FALSE}
-full_meta <- metadata_readin(metadata_fp)
-test_matrix <- get_matrix(jaccard_fp)
-test_distribution <- distance_data_by_relatedness(test_matrix, 
-                                                  full_meta, 
-                                                  method = "Jaccard", 
-                                                  subset_ID = "noodle")
 head(full_meta)
 ```
 
 
 Distance matrix example: 
 
-```{r}
+```{r, echo=FALSE}
 head(test_matrix)
 ```
 
 
-## Outputs 
+## Outputs
+
 The following is an examples of the distance distribution dataframe output: 
 
-```{r }
-head(test_distribution)
+```{r, echo=FALSE}
+head(test_combo)
 ```
 
-# Plots
+### Plots
 
 Density plots generated appear as the following: 
 
-```{r pressure, echo=FALSE}
-plot_by_relatedness(test_combo, "Within_noodle", "15", "1045")
-```
+![Plots of Distributions](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/distribution_plots.png)
+
 Tables and a box plot can also be output to summarize the distributions generated. 
 
-```{r, echo=FALSE}
-summary_of_distributions(test_combo, "Within_noodle")
-```
+![Summary Statistic Output](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/summary_stats_output.png)
 
 
 ## Installation and Dependencies
@@ -84,5 +72,6 @@ You must have R installed. This was written in R-4.1.2 on a Windows-based operat
 
 ## Contact 
 Angela Sofia Burkhart Colorado - angelasofia.burkhartcolorado@cuanschutz.edu
+
 Project Link - https://github.com/acolorado1/IdenitifyingSamplesWithHighTechnicalVariation.git
 
