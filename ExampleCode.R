@@ -1,3 +1,8 @@
+source("./src/DataReadIn.R")
+source("./src/GetDistribution.R")
+source("./src/Plots.R")
+source("./src/SummaryOfDistribution.R")
+
 metadata_fp <- "C:/Users/ascol/OneDrive/Desktop/Miller2022/2022_Spring_GB_16S_metadata.tsv"
 jaccard_fp <- "C:\\Users\\ascol\\OneDrive\\Desktop\\Miller2022\\testing\\14_240_paired_2_2\\jaccard.tsv"
 bray_fp <- "C:\\Users\\ascol\\OneDrive\\Desktop\\Miller2022\\testing\\14_240_paired_2_2\\bray_curtis.tsv"
@@ -22,10 +27,6 @@ plot_by_relatedness(test_distribution, "Within_noodle", "15", "1045")
 
 summary_of_distributions(test_combo, "Within_noodle")
 summary_of_distributions(test_distribution, "Within_noodle")
-
-
-
-
 
 
 
