@@ -62,10 +62,6 @@ Metadata example:
 
 Distance matrix example:
 
-``` r
-head(test_matrix)
-```
-
     ## # A tibble: 6 x 321
     ##   ID    CM001 CM002 CM003 CM005 CM006 CM007 CM009 CM012 CM015 CM018 CM020 CM021 CM023 CM024 CM025 CM027 CM032 CM033 CM037 CM039
     ##   <chr> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
@@ -89,10 +85,6 @@ head(test_matrix)
 The following is an examples of the distance distribution dataframe
 output:
 
-``` r
-head(test_combo)
-```
-
     ##    Distance Within_noodle  Method
     ## 1 0.6890756          True Jaccard
     ## 2 0.5990099          True Jaccard
@@ -105,19 +97,14 @@ head(test_combo)
 
 Density plots generated appear as the following:
 
-    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+![Plots of
+Distributions](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/distribution_plots.png)
 
-![](README_files/figure-gfm/pressure-1.png)<!-- --> Tables and a box
-plot can also be output to summarize the distributions generated.
+Tables and a box plot can also be output to summarize the distributions
+generated.
 
-    ## `summarise()` has grouped output by 'Method'. You can override using the `.groups` argument.
-
-    ## Warning in ks.test(true$Distance, false$Distance): p-value will be approximate in the presence of ties
-
-    ## Warning in ks.test(true$Distance, false$Distance): p-value will be approximate in the presence of ties
-
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![Summary Statistic
+Output](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/summary_stats_output.png)
 
 ## Installation and Dependencies
 
@@ -128,5 +115,7 @@ ggpubr will be required.
 ## Contact
 
 Angela Sofia Burkhart Colorado -
-<angelasofia.burkhartcolorado@cuanschutz.edu> Project Link -
+<angelasofia.burkhartcolorado@cuanschutz.edu>
+
+Project Link -
 <https://github.com/acolorado1/IdenitifyingSamplesWithHighTechnicalVariation.git>
