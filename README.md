@@ -97,14 +97,13 @@ output:
 
 Density plots generated appear as the following:
 
-![Plots of
-Distributions](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/distribution_plots.png)
+![Plots of Distributions](README_files/figure-gfm/pressure-1.png)
 
 Tables and a box plot can also be output to summarize the distributions
 generated.
 
 ![Summary Statistic
-Output](/Users/ascol/OneDrive/Desktop/Miller2022/14_240_paired_2_2/plots_in_git/summary_stats_output.png)
+Output](README_files/figure-gfm/unnamed-chunk-4-1.png)
 
 ## Installation and Dependencies
 
