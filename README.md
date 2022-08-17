@@ -105,13 +105,14 @@ output:
 
 Density plots generated appear as the following:
 
-![Plots of Distributions](README_files/figure-gfm/pressure-1.png)
+![Plots of
+Distributions](data/experiments/14_240_paired_2_2/plots_in_git/distribution_plots.png)
 
 Tables and a box plot can also be output to summarize the distributions
 generated.
 
 ![Summary Statistic
-Output](README_files/figure-gfm/unnamed-chunk-4-1.png)
+Output](data/experiments/14_240_paired_2_2/plots_in_git/summary_stats_output.png)
 
 ## Installation and Dependencies
 
