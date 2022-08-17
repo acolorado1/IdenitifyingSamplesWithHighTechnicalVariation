@@ -86,6 +86,11 @@ Distance matrix example:
     ## #   CM135 <dbl>, CM140 <dbl>, CM141 <dbl>, CM142 <dbl>, CM143 <dbl>, CM144 <dbl>, CM145 <dbl>, CM147 <dbl>, CM148 <dbl>, ...
     ## # i Use `colnames()` to see all variable names
 
+### Command
+
+To run this program, download file and executre code in file
+**ExampleCode.R**
+
 ## Outputs
 
 The following is an examples of the distance distribution dataframe
