@@ -1,7 +1,5 @@
 Identifying Samples with High Technical Variation
 ================
-Angela Sofia Burkhart Colorado
-2022-08-16
 
 ## Description
 
