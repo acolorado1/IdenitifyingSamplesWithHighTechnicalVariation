@@ -20,27 +20,35 @@ were less closely related.
 ### Arguments
 
 Should one want information on a distribution of **one** distance
-metric, further arguments that are needed include: 1. Metric (or method)
-used **e.g. Jaccard** 2. subset_ID (delimited to distinguish between
-related and unrelated samples) **e.g. noodle**
+metric, further arguments that are needed include:
+
+1.  Metric (or method) used **e.g. Jaccard**
+2.  subset_ID (delimited to distinguish between related and unrelated
+    samples) **e.g. noodle**
 
 Should one want information on **all four** distance matrices, the only
-other argument needed is: 1. subset_ID (delimited to distinguish between
-related and unrelated samples) **e.g. noodle**
+other argument needed is:
 
-When plotting distributions there are four arguments: 1. Dataframe
-containing distributions 2. column name of delimiter
-**e.g. Within_noodle** (this column will always begin with **Within\_**)
-3. y limit for the plot (integer) 4. Sampling depth that was used when
-calculating the matrices in QIIME
+1.  subset_ID (delimited to distinguish between related and unrelated
+    samples) **e.g. noodle**
+
+When plotting distributions there are four arguments:
+
+1.  Dataframe containing distributions
+2.  column name of delimiter **e.g. Within_noodle** (this column will
+    always begin with **Within\_**)
+3.  y limit for the plot (integer)
+4.  Sampling depth that was used when calculating the matrices in QIIME
 
 To plot summary statistics the only arguments needed are **1 & 2** of
 the arguments used in the plots.
 
 ### Inputs
 
-To run this script you will need two file types: 1. metadata file (.tsv)
-2. distance matrix file (.txt)
+To run this script you will need two file types:
+
+1.  metadata file (.tsv)
+2.  distance matrix file (.txt)
 
 Metadata example:
 
